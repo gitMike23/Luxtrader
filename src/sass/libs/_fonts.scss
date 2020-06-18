@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "BravoRG";
+    src: url("../fonts/BravoRGRegular.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/BravoRGRegular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("../fonts/BravoRGRegular.woff") format("woff"), /* Modern Browsers */
+      url("../fonts/BravoRGRegular.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CeremoniousOne";
+    src: url("../fonts/ceremoniousone.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/ceremoniousone.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("../fonts/ceremoniousone.woff") format("woff"), /* Modern Browsers */
+      url("../fonts/ceremoniousone.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PFD";
+    src: url("../fonts/pfdintextcondpro-medium.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/pfdintextcondpro-medium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("../fonts/pfdintextcondpro-medium.woff") format("woff"), /* Modern Browsers */
+      url("../fonts/pfdintextcondpro-medium.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PFD";
+    src: url("../fonts/pfdintextcondpro-regular.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/pfdintextcondpro-regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("../fonts/pfdintextcondpro-regular.woff") format("woff"), /* Modern Browsers */
+      url("../fonts/pfdintextcondpro-regular.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: 400;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
