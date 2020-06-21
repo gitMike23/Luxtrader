@@ -1,7 +1,11 @@
+
 @import "libs/fonts";
-
-
 @import 'blocks/header';
+
+
+
+
+@import "base/media";
 
 * {
     font-family: "PT Sans", sans-serif;
@@ -12,8 +16,9 @@
     box-sizing: border-box;
 }
 .container {
-    max-width: 950px;
+    max-width: 970px;
     margin: 0 auto;
+    padding: 0px 10px;
 }
 a {
     text-decoration: none;

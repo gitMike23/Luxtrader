@@ -1,0 +1,106 @@
+
+@media (max-width: 992px) {
+    .menu {
+        &__link {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    .actions-header {
+        &__region {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 890px) {
+    .actions-header{
+        &__user {
+            padding: 0 0 0 15px;
+        }
+        &__region {
+            padding: 0;
+            span {
+                display: none;
+            }
+        }
+    }    
+}
+
+@media (max-width: 767px) {
+    .icon-menu {
+        display: block;
+        
+    }
+    .header {
+        &__logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+        }
+    }
+    .menu {
+        &__list {
+            display: block;
+            text-align: center;
+            li {
+                margin-bottom: 30px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        &__link {
+            font-size: 24px;
+        }
+        &__body {
+            background-color: rgba(28, 36, 42, 0.8);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 100px 0 20px 0;
+            overflow: auto;
+            opacity: 0;
+            visibility: hidden;
+            &:after {
+                content: "";
+                background-color: #1c242a;
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 75px;
+                width: 100%;
+            }
+            &._active {
+                opacity: 1;
+                visibility: visible;
+
+            }
+        }
+    }
+    .user-header {
+        &__menu {
+            width: 100%;
+        }
+    }
+    .actions-header {
+        &__region {
+            padding: 0 0 0 30px;
+            span {
+                display: inline-block;
+            }
+        }
+    }
+
+
+}
+
+
+
