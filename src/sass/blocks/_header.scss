@@ -21,6 +21,9 @@
             margin: 0 15px;
         }  
     }
+    &__body {
+        text-align: center;
+    }
 
     &__link {
         color: #ffffff; 
@@ -80,21 +83,26 @@
     display: flex;
     align-items: center;
     &__region {
-        color: #ffffff; 
-        font-family: "PFD";
-        font-weight: 400;
-        letter-spacing: 1.4px;
+        span {
+            font-family: "PFD", sans-serif;
+            font-weight: 400;
+            letter-spacing: 1.4px;
+            line-height: 18px;
+            text-transform: uppercase;
+            font-size: 14px;
+            color: #ffffff; 
+        }
         background: url("../../img/icons/region__globe.png") left no-repeat;
         padding-left: 30px;
-        line-height: 18px;
-        text-transform: uppercase;
-        font-size: 14px;
         min-width: 18px;
         min-height: 18px;
         position: relative;
         z-index: 2;
         &:hover {
             text-decoration: underline;
+        }
+        &_mobile {
+            display: none;
         }
     }
     &__user {

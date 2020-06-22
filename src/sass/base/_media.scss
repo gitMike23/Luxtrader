@@ -23,8 +23,10 @@
         }
         &__region {
             padding: 0;
-            span {
-                display: none;
+            &_desktop{
+                span {
+                    display: none;
+                }
             }
         }
     }    
@@ -65,7 +67,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            padding: 100px 0 20px 0;
+            padding: 130px 0 20px 0;
             overflow: auto;
             opacity: 0;
             visibility: hidden;
@@ -92,15 +94,34 @@
     }
     .actions-header {
         &__region {
-            padding: 0 0 0 30px;
-            span {
-                display: inline-block;
-            }
+            margin-right: 5px;
         }
     }
-
-
 }
 
 
-
+@media (max-width: 500px) {
+    .actions-header {
+        &__region {
+            &_mobile {
+                display: inline-block;
+                margin-top: 40px;
+                min-width: 24px;
+                min-height: 24px;
+                span {
+                    color: #ffffff; 
+                    font-family: "PFD";
+                    font-weight: 400;
+                    letter-spacing: 1.4px;
+                    padding-left: 30px;
+                    line-height: 24px;
+                    text-transform: uppercase;
+                    font-size: 24px;
+                }
+            }
+            &_desktop {
+                display: none;
+            }
+        }
+    }
+}
