@@ -1,0 +1,129 @@
+.page {
+    flex: 1 1 auto;
+}
+
+.ibg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    img {display: none;}
+}
+
+
+.item-slider {
+    padding: 30px 0 100px 0;
+    text-align: center;
+    position: relative;
+    &__text {
+        max-width: 700px;
+        margin: 0 auto;
+        color: #fff;
+        font-size: 15px;
+        line-height: calc(25 / 15);
+        margin-top: 25px;
+    }
+    &__btn {
+        display: inline-block;
+        margin-top: 55px;
+    }
+    &__bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    &__content {
+        position: relative;
+        z-index: 2;
+    }
+   
+}
+
+.title {
+    &__item {
+        font-family: 'CeremoniousOne';
+        font-size: 40px;
+        color: #bb9c66;
+        margin-bottom: 20px/40px * 1em;
+    }
+    &__main {
+        font-size: 35px;
+        font-family: 'PFD';
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 5.25px;
+        &_w {
+            color: #fff;
+
+        }
+    }
+}
+
+.main-slider {
+    position: relative;
+    &__control {
+        position: absolute;
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        bottom: 0px;
+        transform: translate(-50%, 50%);
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        &:after {
+            content: "";
+            background-color: #fff;
+            position: absolute;
+            width: 73%;
+            height: 73%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+          
+           
+        }
+        
+
+    }
+}
+
+.control-main-slider {
+    &__decor {
+        position: relative;
+        z-index: 2;
+        margin: 0px 12px;
+        animation: rotate 5s linear infinite;
+    }
+    &__arrow {
+        position: relative;
+        z-index: 2;
+        cursor: pointer;
+        &_next {
+            width: 15px;
+            height: 24px;
+            &.slick-arrow {
+                background: url(../../img/decor/Next_arrow.jpg) 0 0 no-repeat;
+                transform: translate(163%, 50%);
+            }
+        }
+        &_prev {
+            width: 15px;
+            height: 24px;
+            transform: rotate(180deg);
+            &.slick-arrow {
+                background: url(../../img/decor/Next_arrow.jpg) 0 0 no-repeat;
+                transform: translate(-262%, 50%) rotate(180deg);    
+            }
+        }
+    }
+}
+@keyframes rotate {
+    0% {
+
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

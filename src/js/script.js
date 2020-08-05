@@ -1,5 +1,7 @@
 'use strict';
 
+
+
 let user_icon = document.querySelector('.user-header__icon');
 user_icon.addEventListener("click", function(e) {
     let user_menu = document.querySelector('.user-header__menu');
@@ -25,3 +27,21 @@ burger.addEventListener("click", function(e) {
     body_active.classList.toggle('_active');
 
 });
+
+// функция IBG для фоновой фулл-скрин картинки
+function ibg(){
+    $.each($('.ibg'), function(index, val) {
+        if($(this).find('img').length>0){
+            $(this).css('background-image','url("'+$(this).find('img').attr('src')+'")');
+        }
+    });
+}
+ibg();
+
+//Slider
+$(document).ready(function(){
+    $('.main-slider__body').slick({
+        prevArrow: '<div class="control-main-slider__arrow_prev"></div>',
+        nextArrow: '<div class="control-main-slider__arrow_next"></div>',
+    });
+  });

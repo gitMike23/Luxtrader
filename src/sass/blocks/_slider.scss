@@ -1,0 +1,26 @@
+.slick-slider {}
+
+/*  Ограничивающая оболочка ленты */
+.slick-list {
+    overflow: hidden;
+}
+
+/*  Лента слайдов*/
+.slick-track {
+    display: flex;
+}
+
+
+.slick-slide {}
+.slick-slide .slick-current {}
+.slick-slide .slick-active {}
+
+.slick-arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  z-index: 5;
+}
+
+
+

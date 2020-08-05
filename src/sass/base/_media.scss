@@ -1,4 +1,5 @@
 
+
 @media (max-width: 992px) {
     .menu {
         &__link {
@@ -83,6 +84,7 @@
             &._active {
                 opacity: 1;
                 visibility: visible;
+                z-index: 10;
 
             }
         }
